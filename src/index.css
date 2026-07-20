@@ -1,0 +1,55 @@
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #FAF6EC;
+  background-image:
+    radial-gradient(circle at 15% 8%, rgba(184, 128, 31, 0.06), transparent 40%),
+    radial-gradient(circle at 85% 92%, rgba(30, 127, 184, 0.05), transparent 45%);
+  color: #1B2A4A;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: #B8801F;
+  color: #FAF6EC;
+}
+
+/* Motif "kawung" simplifié — cercles imbriqués inspirés d'un motif traditionnel
+   de batik, utilisé comme texture d'arrière-plan très discrète. */
+.kawung-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.06;
+  pointer-events: none;
+  background-image: radial-gradient(circle at 50% 50%, transparent 0, transparent 8px, #B8801F 8px, #B8801F 9px, transparent 9px);
+  background-size: 42px 42px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid #B8801F;
+  outline-offset: 2px;
+}
