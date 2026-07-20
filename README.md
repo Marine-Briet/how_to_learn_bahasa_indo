@@ -14,6 +14,10 @@ Application de flashcards personnelle pour réviser 100 verbes indonésiens (rac
 
 Vite + React, déployé sur Vercel.
 
+
 ## Enrichir la base de verbes
 
 Tout se trouve dans `src/data/verbes.js` — un objet par verbe (`racine`, `formes`, `traduction`, `categorie`), aucun autre fichier à toucher pour en ajouter.
+
+
+https://howtolearnbahasa.vercel.app
